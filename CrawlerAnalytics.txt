@@ -1,0 +1,10 @@
+Number of Invalid Links: 0
+Link with most links: http://www.ics.uci.edu/community/news/spotlight/spotlight_baldi.php/faculty/area/involved/ugrad/policies/Academic_Standing/about/visit/indexhttps://friends/leadershipcouncil/index.phphttps://friends/alumni/index.phphttps://soundcloud.com/uci-brenicshttps://ua-web.uadv.uci.edu/eGivinghttps://soundcloud.com/uci-brenicshttps://ua-web.uadv.uci.edu/eGivinghttps://soundcloud.com/uci-brenicshttps:/friendsindex.phphttps://www.linkedin.com/company/uc-irvine-information-and-computer-scienceshttps://ucirvine-csm.symplicity.com/index.php/pid700104https://ucirvine-csm.symplicity.com/index.php/pid700104https:https://alumni/index.phphttps:/friends/OLD_index.phphttps:index.phphttps:/index.phpindex.phphttps://ucirvine-csm.symplicity.com/index.phphttps:/friendsindex.phpindex.phphttps://friends/OLD_index.phphttps://www.linkedin.comhttps://ucirvine-csm.symplicity.com/../friends/leadershipcouncil/index.phpat 154 links.
+Number of Links Marked Bad: 0
+Subdomains visited (sorted by most common)
+http://www.ics.uci.edu visited 1913 times.
+http://archive.ics.uci.edu visited 14 times.
+http://hombao.ics.uci.edu visited 3 times.
+http://ngs.ics.uci.edu visited 3 times.
+http://vision.ics.uci.edu visited 2 times.
+http://www. visited 1 times.
