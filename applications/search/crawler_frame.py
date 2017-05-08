@@ -20,8 +20,8 @@ except ImportError:
 logger = logging.getLogger(__name__)
 LOG_HEADER = "[CRAWLER]"
 url_count = (set() 
-    if not os.path.exists("successful_urls.txt") else 
-    set([line.strip() for line in open("successful_urls.txt").readlines() if line.strip() != ""]))
+    if not os.path.exists("successful_urls2.txt") else 
+    set([line.strip() for line in open("successful_urls2.txt").readlines() if line.strip() != ""]))
 MAX_LINKS_TO_DOWNLOAD = 3000
 
 @Producer(ProducedLink, Link)
@@ -150,7 +150,8 @@ def extract_next_links(rawDatas):
             tree = etree.HTML(tmpStr) # Separates html into a tree based on tags
             for href in tree.xpath('//a/@href'): # takes out all the hrefs from the tree //xpath syntax
                 if not href in links:
-                    outputLinks.append(href)
+                    #outputLinks.append(href)
+                    print(href)
             if len(outputLinks) > highestLinkCount:
                 highestLinkCountUrl = url
                 highestLinkCount = len(outputLinks)
@@ -211,7 +212,16 @@ def is_valid(url):
                 ++invalidLinkCount
                 return False
         '''
-        
+        if '../' in url: # These 2 ifs check if there's some sort of weird URL concatenation happening
+        	++invalidLinkCount
+        	return False
+        if '.php' in url[:-4] and '.ph' in url [-4:-1]: #Obviously there shouldn't be 2 .phps in a single URL
+        	++invalidLinkCount
+        	return False
+        if url.count("/") >= 10
+        	++invalidLinkCount
+        	return False
+
     #### Asked in Discussion if it was okay to not check for infinite loop traps. Waiting on Response
         print ("Checking if .ics.uci.edu and not media")
         if ".ics.uci.edu" in parsed.hostname \
