@@ -78,9 +78,9 @@ class Word_Freq:
                     tmpCount += 1
 
                     # Printing out the inverted index to a text file for testing
-                    # for (k,v) in self.doc_dict.items():
-                    # print(str(k) + " - " + str(v) + "\n")
-                    # f.write(str(k) + " - " + str(v) + "\n")
+                    #for (k,v) in self.doc_dict.items():
+                #print(str(k) + " - " + str(v) + "\n")
+                #f.write(str(k) + " - " + str(v) + "\n")
 
         # This is simply statistics output
         # self.word_count = len(self.doc_dict)
@@ -169,6 +169,7 @@ if __name__ == "__main__":
             print(str(e) + "\n")
 
         print("Search Completed")
+        print("Count of results: " + str(len(results)))
         #w.print_stats()
     except IndexError:
         print("No file was entered.")
